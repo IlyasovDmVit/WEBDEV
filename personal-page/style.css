@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: inline;
+    margin-right: 10px;
+}
+li: :last-child {
+    max-width: 0;
+
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+} 
+a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
