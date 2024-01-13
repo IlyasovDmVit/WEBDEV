@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab_2.css">
+    
+</head>
+
+<body>
+    <h1>Форма обратной связи</h1>
+
+    <form method="post" action="https://httpbin.org/post">
+        <label for="fio">ФИО:</label>
+        <input type="text" name="fio" id="fio" placeholder="Введите ФИО" value="" required>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Введите Email" value="" required>
+
+        <fieldset>
+            <legend>Откуда узнали о нас?</legend>
+            <div>
+                <input type="radio" id="radio1" name="source" value="Наткнулись случайно" checked />
+                <label for="radio1">Наткнулись случайно</label>
+            </div>
+            <div>
+                <input type="radio" id="radio2" name="source" value="Из рекламы" />
+                <label for="radio2">Из рекламы</label>
+            </div>
+            <div>
+                <input type="radio" id="radio3" name="source" value="От друга" />
+                <label for="radio3">От друга</label>
+            </div>
+        </fieldset>
+
+        <label for="type">Тип обращения:</label>
+        <select name="type" id="type">
+            <option value="Жалоба">Жалоба</option>
+            <option value="Предложение">Предложение</option>
+        </select>
+
+        <label for="message">Текст сообщения:</label>
+        <textarea name="message" id="message" placeholder="Введите текст сообщения"></textarea>
+
+        <label for="attachments">Вложения:</label>
+        <input type="file" name="attachments" id="attachments" multiple>
+
+        <label>
+            <input type="checkbox" name="consent" required>
+            Даю согласие на обработку персональных данных
+        </label>
+
+        <button type="submit">Отправить форму</button>
+    </form>
+
+</body>
+
+</html>
