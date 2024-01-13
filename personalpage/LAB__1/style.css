@@ -28,6 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: 'Nerko One', cursive;
     text-decoration: none;
     color: #ffffff;
 }
@@ -37,6 +38,7 @@ main {
 }
 
 h2 {
+    font-family: 'Nerko One', cursive;
     color: #5a99aa;
 }
 
@@ -52,6 +54,8 @@ table {
 
 table th,
 table td {
+    font-family: 'Nerko One', cursive;
+    color: #5a99aa;
     padding: 10px;
     border: 1px solid #cccccc;
 }
