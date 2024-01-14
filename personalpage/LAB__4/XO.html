@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Игра "Крестики-нолики"</title>
+    <script src="XO.js"></script>
+    <link rel="stylesheet" href="XO.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Игра "Крестики-нолики"</h1>
+        <div class="board" id="board">
+            <div class="cell" onclick="makeMove(0,0)"></div>
+            <div class="cell" onclick="makeMove(0,1)"></div>
+            <div class="cell" onclick="makeMove(0,2)"></div>
+            <div class="cell" onclick="makeMove(1,0)"></div>
+            <div class="cell" onclick="makeMove(1,1)"></div>
+            <div class="cell" onclick="makeMove(1,2)"></div>
+            <div class="cell" onclick="makeMove(2,0)"></div>
+            <div class="cell" onclick="makeMove(2,1)"></div>
+            <div class="cell" onclick="makeMove(2,2)"></div>
+        </div>
+        <div class="message" id="message"></div>
+        <button onclick="resetGame()">Новая игра</button>
+    </div>
+
+    
+</body>
+</html>

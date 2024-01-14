@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f5ff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    background-color: #cfe2f3;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #bdd7ed;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003399;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #bdd7ed;
+    border: none;
+    border-radius: 5px;
+    color: #003399;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a8c2dd;
+}
