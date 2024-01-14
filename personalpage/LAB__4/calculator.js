@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let result;
       
         try {
-          
-          result = Function('return ' + expression)();
+          const sanitizedExpression = expression.replace(/[^-()\d/*+.]/g, '');
+          result = Function('return ' + sanitizedExpression)();
           screen.textContent = result;
         } catch (error) {
           screen.textContent = 'Error';
